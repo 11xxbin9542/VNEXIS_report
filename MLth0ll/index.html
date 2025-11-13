@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI기반 의료문서 자동화 솔루션 - VNEXIS</title>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800">
+
+    <div class="container mx-auto px-4 md:px-6">
+
+        <!-- (1) Header & Core Message -->
+        <header class="text-center py-20 md:py-24 scroll-target">
+            <h1 class="text-4xl md:text-6xl font-black text-primary mb-4">AI기반 의료문서 자동화 솔루션</h1>
+            <h2 class="text-4xl md:text-6xl font-black text-primary mb-8">VNEXIS</h2>
+            <p class="text-xl md:text-2xl font-bold text-accent">이제 조사자는 조사에만 집중하세요.<br class="md:hidden"> 보험·의료 문서, AI가 5분 이내 완성!</p>
+            
+            <!-- Countdown Timer -->
+            <div id="countdown-wrapper" class="mt-12 max-w-2xl mx-auto scroll-target">
+                <h4 class="text-xl font-bold text-primary mb-4">VNEXIS 정식 런칭까지 남은 시간</h4>
+                <div id="countdown-container" class="flex justify-center items-center space-x-2 md:space-x-4">
+                    <div class="countdown-box"><span id="days" class="countdown-number">0</span><span class="countdown-label">Days</span></div>
+                    <div class="countdown-box"><span id="hours" class="countdown-number">0</span><span class="countdown-label">Hours</span></div>
+                    <div class="countdown-box"><span id="minutes" class="countdown-number">0</span><span class="countdown-label">Minutes</span></div>
+                    <div class="countdown-box"><span id="seconds" class="countdown-number">0</span><span class="countdown-label">Seconds</span></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-4xl mx-auto">
+            
+            <!-- Section Divider -->
+            <div class="section-divider"></div>
+
+            <!-- (2) Service Introduction -->
+            <section class="py-16 scroll-target">
+                <h3 class="section-title">📌 서비스 소개</h3>
+                <div class="section-content">
+                    <p>VNEXIS는 보험 손해사정 조사자를 위한 <strong class="text-accent">AI 보고서 자동 생성 플랫폼</strong>입니다. 최신 OCR(광학 문자 인식)과 LLM(대규모 언어 모델) 기술을 결합하여, 방대한 의료 문서를 자동으로 분석하고 단 5분 이내에 완성도 높은 의료문서 분석 보고서 초안을 제공합니다. 조사자의 업무 효율을 극대화하고, 보고서의 정확성과 신뢰도를 높여줍니다.</p>
+                </div>
+            </section>
+            
+            <!-- Section Divider -->
+            <div class="section-divider"></div>
+
+            <!-- (3) Key Features -->
+            <section class="py-16 scroll-target">
+                <h3 class="section-title">⚙️ 핵심 기능</h3>
+                <ul class="section-content-list">
+                    <li><i data-lucide="check-circle" class="icon-accent"></i><strong>AI OCR 문서 인식:</strong> 진단서·진료비 내역서·소견서 자동 분류</li>
+                    <li><i data-lucide="check-circle" class="icon-accent"></i><strong>고정밀 의료문서 분석 보고서(요약표) 생성:</strong> 결재자용 템플릿 자동 완성</li>
+                    <li><i data-lucide="check-circle" class="icon-accent"></i><strong>Click-to-Evidence:</strong> 주요 문장을 원문 스니펫과 연결</li>
+                    <li><i data-lucide="check-circle" class="icon-accent"></i><strong>증거 타임라인:</strong> 내원·검사·수술 내역 날짜별 정렬</li>
+                    <li><i data-lucide="check-circle" class="icon-accent"></i><strong>KOICD 코딩 지침 및 KCD-10 기준 의학용어 자동 번역 및 진단 근거 기반 보고서 작성:</strong> 전문용어 완벽 해석</li>
+                    <li><i data-lucide="check-circle" class="icon-accent"></i><strong>날짜별 진료내역 요약:</strong> 진료 흐름 한눈에 파악</li>
+                </ul>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider"></div>
+
+            <!-- (4) Benefits -->
+            <section class="py-16 scroll-target">
+                <h3 class="section-title">🚀 도입 효과</h3>
+                <ul class="section-content-list">
+                    <li>
+                        <i data-lucide="check-circle" class="icon-accent"></i>
+                        <div>
+                            보고서 작성 시간 <strong class="font-bold">최대 80% 단축</strong>
+                            <p class="text-base font-normal text-gray-600 mt-1">매번 번거롭고 귀찮았던 의료문서 분석 작업, 이제 단 5분내로 줄이고 본연의 업무에만 집중하세요.</p>
+                        </div>
+                    </li>
+                    <li><i data-lucide="check-circle" class="icon-accent"></i><strong class="font-bold">대량 의학용어 자동 번역</strong>으로 문서 이해도 향상</li>
+                    <li><i data-lucide="check-circle" class="icon-accent"></i><strong class="font-bold">KCD-10 진단코드 근거 자동 증빙</strong>으로 결재자 신뢰 확보</li>
+                    <li><i data-lucide="check-circle" class="icon-accent"></i><strong class="font-bold">날짜별 진료요약</strong>으로 흐름 명확</li>
+                    <li><i data-lucide="check-circle" class="icon-accent"></i>반복 작업 제거 → <strong class="font-bold">하루 처리 건수 증가</strong></li>
+                </ul>
+                <div class="mt-10 text-center bg-bg-accent p-6 rounded-lg">
+                    <p class="text-lg font-semibold text-primary">"AI가 대신 써주는 정확한 보고서, 조사자는 본연의 업무에만 집중하세요."</p>
+                </div>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider"></div>
+
+            <!-- (5) Pricing -->
+            <section class="py-16 scroll-target">
+                <h3 class="section-title">💰 가격 정책</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr>
+                                <th class="table-header">구분</th>
+                                <th class="table-header">페이지 수</th>
+                                <th class="table-header text-right">금액 (VAT 별도)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-cell font-bold">기본형</td>
+                                <td class="table-cell">100장 이하</td>
+                                <td class="table-cell text-right font-bold text-primary">10,000원</td>
+                            </tr>
+                            <tr>
+                                <td class="table-cell font-bold bg-bg-accent">확장형</td>
+                                <td class="table-cell bg-bg-accent">100 ~ 200장 이하</td>
+                                <td class="table-cell bg-bg-accent text-right font-bold text-primary">20,000원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-8 text-center space-y-2">
+                    <p class="text-accent font-bold text-lg">사전 신청 혜택: 무료 테스트 3건 제공!</p>
+                    <p class="text-gray-600">결제 후 5분 이내 결과물 다운로드 가능</p>
+                </div>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider"></div>
+            
+            <!-- (6) Usage Procedure -->
+            <section class="py-16 scroll-target">
+                <h3 class="section-title">🧩 이용 절차 (간단 4단계)</h3>
+                <ol class="section-content grid md:grid-cols-4 gap-8 text-center">
+                    <li class="flex flex-col items-center">
+                        <div class="step-number">1</div>
+                        <p class="font-medium mt-4">회원가입 및<br>약관 동의</p>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <div class="step-number">2</div>
+                        <p class="font-medium mt-4">파일 업로드<br>(PDF 또는 이미지)</p>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <div class="step-number">3</div>
+                        <p class="font-medium mt-4">AI 자동 분석 및<br>보고서 생성 (5분 이내)</p>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <div class="step-number">4</div>
+                        <p class="font-medium mt-4">결과물 다운로드<br>및 제출</p>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider"></div>
+
+            <!-- (7) Legal & Security -->
+            <section class="py-16 scroll-target">
+                <h3 class="section-title">🧑‍💼 법률 및 보안 정보</h3>
+                <ul class="section-content-list">
+                    <li><i data-lucide="shield-check" class="icon-gray"></i>AI는 ‘보조도구’, 최종 판단은 손해사정사 수행</li>
+                    <li><i data-lucide="shield-check" class="icon-gray"></i>개인정보 가명처리 및 암호화 저장, 90일 후 자동 파기</li>
+                    <li><i data-lucide="shield-check" class="icon-gray"></i>DPA(위탁계약) 및 개인정보 처리방침 적용</li>
+                </ul>
+            </section>
+
+            <!-- Section Divider -->
+            <div class="section-divider"></div>
+
+            <!-- (8) Customer Support -->
+            <section class="py-16 scroll-target">
+                <h3 class="section-title">📞 고객 지원 및 문의</h3>
+                <div class="section-content text-center space-y-2">
+                    <p><strong>이메일:</strong> VNEXIS_1@gmail.com</p>
+                    <p><strong>공식 사이트:</strong> <a href="https://vnexis-auto-report.lovable.app" target="_blank" class="text-accent hover:underline">https://vnexis-auto-report.lovable.app</a></p>
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- (9) Final CTA -->
+        <section class="bg-bg-light scroll-target my-20">
+            <div class="max-w-4xl mx-auto text-center py-16 md:py-20 px-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4">단 5분 내로 완성되는 AI기반 의료문서 자동화 솔루션</h2>
+                <p class="text-lg md:text-xl text-gray-700 mb-8">사전 신청 혜택: 무료 테스트 3건 제공!</p>
+                <a href="https://docs.google.com/forms/d/1aijzHKT-IOU1hYVpbW_Pdbg1g0xsrxh6UjLVTz0TAVQ/edit#responses" target="_blank" class="cta-button">
+                    사전 신청하기
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- (10) Footer -->
+    <footer class="text-center py-8 text-gray-500 text-sm bg-white">
+        <p>© 2025 VNEXIS. All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
