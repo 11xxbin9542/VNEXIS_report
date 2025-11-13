@@ -1,0 +1,221 @@
+:root {
+  --color-primary: #1A2340;
+  --color-accent: #0094FF;
+  --color-bg-light: #F0F4F8;
+  --color-bg-accent: #E9F7FF;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #334155;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-bg-light {
+    background-color: var(--color-bg-light);
+}
+
+.bg-bg-accent {
+    background-color: var(--color-bg-accent);
+}
+
+.section-divider {
+    height: 1px;
+    background-color: #e2e8f0;
+    max-width: 4xl;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    font-size: 1.75rem; /* 28px */
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 2.5rem; /* 40px */
+}
+
+.section-content {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75;
+    color: #475569;
+}
+
+.section-content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; /* 20px */
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: #475569;
+}
+
+.section-content-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.icon-accent {
+    color: var(--color-accent);
+    flex-shrink: 0;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-gray {
+    color: #64748b;
+    flex-shrink: 0;
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+table {
+    font-size: 1rem;
+}
+
+.table-header {
+    background-color: var(--color-bg-light);
+    color: var(--color-primary);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid #cbd5e1;
+}
+
+.table-cell {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+    background-color: var(--color-bg-accent);
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #0094FF;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 148, 255, 0.2), 0 4px 6px -2px rgba(0, 148, 255, 0.1);
+}
+
+.scroll-target {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-target.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Countdown Timer */
+#countdown-wrapper {
+    background-color: var(--color-bg-accent);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.countdown-box {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    min-width: 60px;
+}
+
+.countdown-number {
+    display: block;
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.2;
+}
+
+.countdown-label {
+    display: block;
+    font-size: 0.75rem; /* 12px */
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .section-content,
+    .section-content-list {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+    
+    .section-content-list li {
+        gap: 0.5rem;
+    }
+
+    .icon-accent, .icon-gray {
+        margin-top: 4px;
+    }
+    
+    .countdown-box {
+        padding: 0.5rem;
+        min-width: 55px;
+    }
+    
+    .countdown-number {
+        font-size: 1.75rem;
+    }
+
+    .countdown-label {
+        font-size: 0.7rem;
+    }
+    
+    .table-header,
+    .table-cell {
+        padding: 1rem;
+    }
+    
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.875rem 2rem;
+    }
+}
